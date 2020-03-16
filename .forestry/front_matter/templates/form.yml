@@ -1,4 +1,18 @@
 ---
 label: form
 hide_body: true
-fields: []
+fields:
+- name: your_name
+  type: text
+  config:
+    required: false
+  label: Your Name
+- name: your_question
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Your Question
